@@ -19,11 +19,16 @@ class RegisterViewController: UIViewController {
     }  //  Main Method
     
     
+    @IBAction func upioadButton(_ sender: UIBarButtonItem)
+    {
+    }
+    
+    
+    
     @IBAction func backButton(_ sender: UIBarButtonItem) {
         
         print("You Cick Back")
         performSegue(withIdentifier: "BackMain", sender: self)
-        
     }
     
 
