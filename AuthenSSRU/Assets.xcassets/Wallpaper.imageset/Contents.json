@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "jericho-cervantes-1404746-unsplash.jpg",
+      "filename" : "jose-llamas-566450-unsplash.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "jericho-cervantes-1404746-unsplash-1.jpg",
+      "filename" : "jose-llamas-566450-unsplash@2x.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "jericho-cervantes-1404746-unsplash-2.jpg",
+      "filename" : "jose-llamas-566450-unsplash@3x.jpg",
       "scale" : "3x"
     }
   ],
