@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="xgQ-vz-xbH">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="896" id="esq-FR-nc9"/>
-                                    <constraint firstAttribute="width" constant="414" id="ywz-WA-Mga"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Abh-7l-Szc">
                                 <rect key="frame" x="117" y="120" width="180" height="180"/>
                                 <constraints>
@@ -92,7 +85,17 @@
                                 <state key="normal" title="New Register">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="rogisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qoa-IJ-R9F"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" tag="18" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="xgQ-vz-xbH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="esq-FR-nc9"/>
+                                    <constraint firstAttribute="width" constant="414" id="ywz-WA-Mga"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -115,10 +118,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="loj-q4-y0n" kind="show" identifier="GoRegister" id="TZm-7m-tzH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="659" y="-46"/>
+            <point key="canvasLocation" x="557" y="-46"/>
         </scene>
         <!--Register-->
         <scene sceneID="d5O-hg-xp1">
