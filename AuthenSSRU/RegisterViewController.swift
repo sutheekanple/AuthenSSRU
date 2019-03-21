@@ -9,9 +9,23 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
+    
+//     My Outlet
+    
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    
+    @IBOutlet weak var userTextField: UITextField!
+    
+    
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+  
+    
+    //  End Outlt
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +36,11 @@ class RegisterViewController: UIViewController {
     @IBAction func upioadButton(_ sender: UIBarButtonItem){
         
         print("You Click Upload")
+        
+        let name = nameTextField.text!
+        
+        
+        print("name = \(name)")
         
     }
     

@@ -187,6 +187,9 @@
                         <viewLayoutGuide key="safeArea" id="0ua-oK-bU4"/>
                     </view>
                     <connections>
+                        <outlet property="nameTextField" destination="GMk-bo-iWa" id="GRe-6T-RJe"/>
+                        <outlet property="passwordTextField" destination="mEU-fF-5f4" id="krF-bk-wTS"/>
+                        <outlet property="userTextField" destination="jwy-eF-qAK" id="6eS-hX-fPT"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="BackMain" id="eV0-FE-LUL"/>
                     </connections>
                 </viewController>
