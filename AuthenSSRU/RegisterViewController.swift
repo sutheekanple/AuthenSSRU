@@ -48,10 +48,19 @@ class RegisterViewController: UIViewController {
         print("user = \(user)")
         print("password = \(password)")
         
+        if (name.count == 0) || (user.count == 0) || (password.count == 0) {
+            myAlert(tileStrng: "Have Space", messagestring: "Please Fill All Blank")
+        } else{
+            
+        }
         
         
+    }  //  upioad Button
+    
+    func myAlert(tileStrng: String, messagestring: String) -> Void {
         
         
+        print("title = \(tileStrng) , message =\(messagestring) ")
         
     }
     
@@ -66,4 +75,4 @@ class RegisterViewController: UIViewController {
     }
     
 
-}  //Main Class
+}  //  Main Class
