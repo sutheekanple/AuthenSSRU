@@ -60,6 +60,7 @@ class RegisterViewController: UIViewController {
     func myAlert(tileStrng: String, messagestring: String) -> Void {
         
         
+        
         print("title = \(tileStrng) , message =\(messagestring) ")
         let alert = UIAlertController(title: tileStrng, message: messagestring, preferredStyle: UIAlertController.Style.alert)
 
@@ -72,6 +73,15 @@ class RegisterViewController: UIViewController {
         
         
     }  // myAlert
+    
+    func oplosdData(name: String, user: String,password: String) -> Void {
+        
+        
+        let  urlString: String  = "https://www.androidthai.in.th/snru/addDataPle.php?isAdd=true&Name=\(name)&User=\(user)&password=\(password)"
+        
+        
+        
+    }
     
     
     
