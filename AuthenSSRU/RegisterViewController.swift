@@ -79,6 +79,30 @@ class RegisterViewController: UIViewController {
         
         let  urlString: String  = "https://www.androidthai.in.th/snru/addDataPle.php?isAdd=true&Name=\(name)&User=\(user)&password=\(password)"
         
+        let url = URL(string: urlString)
+        let request = NSMutableURLRequest(url: url!)
+        
+        let  task = URLSession.shared.dataTask(with: request as URLRequest) { data,respone,error in
+            
+            if error != nil{
+               print("Error")
+            } else {
+                
+                if let testData = data  {
+                    
+                    _ = NSString(data: testData,encoding: String.Encoding.utf8.rawValue)
+                    print("canRead ==> \\String(descring:canReadData))")
+                    
+                    
+                }
+                
+            }  // if1
+            
+            
+        } // end Task
+        task.resume()
+        
+        
         
         
     }
